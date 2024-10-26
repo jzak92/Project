@@ -49,7 +49,7 @@ else:
     # Load the models
     gbc_model = load_model('GradientBoostingClassifier1')
     lightgbm_model = load_model('LGBMClassifier2')
-    rf_model = load_model('RandomForestClassifier3')
+    rf_model = load_model('https://github.com/jzak92/Project/blob/main/pycaret_model_normFeatures/RandomForestClassifier3.zip')
 
     # Streamlit app interface
     st.markdown("<h1 style='text-align: center; color: black;'>Instructor Dashboard for E-Learning Systems</h1>", unsafe_allow_html=True)
