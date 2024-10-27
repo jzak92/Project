@@ -1,5 +1,13 @@
+#[theme]
+#primaryColor="#5c5aea"
+#backgroundColor="#eeeff5"
+#secondaryBackgroundColor="#d0c1ef"
+#textColor="#141313"
+#font="serif"
+
 [theme]
-primaryColor="#191792"
-backgroundColor="#647cd6"
+primaryColor="#413fc7"
+backgroundColor="#f3f4f7"
 secondaryBackgroundColor="#aec8da"
 textColor="#141313"
+font="serif"
