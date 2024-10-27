@@ -50,7 +50,7 @@ else:
     # Load the models
     gbc_model = load_model('GradientBoostingClassifier1')
     lightgbm_model = load_model('LGBMClassifier2')
-    rf_model = load_model('RandomForestClassifier3.pkl')
+    # rf_model = load_model('RandomForestClassifier3.pkl')
 
     # Streamlit app interface
     st.markdown("<h1 style='text-align: center; color: black;'>Instructor Dashboard for E-Learning Systems</h1>", unsafe_allow_html=True)
@@ -107,7 +107,7 @@ else:
         
         # Mapping model option to actual model
         if model_option == 'Random Forest':
-            model = rf_model
+            model = gbc_model
         elif model_option == 'Gradient Boosting':
             model = gbc_model
         else:
