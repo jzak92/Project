@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 import pandas as pd
 import seaborn as sns
@@ -362,4 +361,3 @@ else:
         plt.ylabel('Accuracy')
         plt.title('Model Comparison: Accuracy')
         st.pyplot(plt)
->>>>>>> e39171a766da33e9d5cb1b55b916464f2aaa0056
