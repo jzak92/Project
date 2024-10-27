@@ -23,6 +23,7 @@ def login(username, password):
 # If not logged in, show the login form
 if not st.session_state['logged_in']:
     # Center the login form
+    st.image("ides.png", width=120)
     st.markdown("<h1 style='text-align: center;'>Instructor Dashboard Login</h1>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 2, 1])
 
@@ -53,6 +54,7 @@ else:
     rf_model = load_model('RandomForestClassifier3')
 
     # Streamlit app interface
+    st.image("ides.png", width=120)
     st.markdown("<h1 style='text-align: center; color: black;'>Instructor Dashboard for E-Learning Systems</h1>", unsafe_allow_html=True)
     # st.title("Instructor Dashboard for E-Learning Systems")
 
