@@ -43,6 +43,7 @@ if not st.session_state['logged_in']:
 else:
 # Main app content is shown only after login
 
+    st.cache_data.clear()
 
     # Load the dataset
     data = pd.read_csv('Preprocessed_data1b.csv')
