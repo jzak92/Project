@@ -50,7 +50,7 @@ else:
     # Load the models
     gbc_model = load_model('GradientBoostingClassifier1')
     lightgbm_model = load_model('LGBMClassifier2')
-    # rf_model = load_model('RandomForestClassifier3.pkl')
+    rf_model = load_model('RandomForestClassifier3.pkl')
 
     # Streamlit app interface
     st.markdown("<h1 style='text-align: center; color: black;'>Instructor Dashboard for E-Learning Systems</h1>", unsafe_allow_html=True)
@@ -102,16 +102,16 @@ else:
         st.sidebar.header("Choose Model")
         model_option = st.sidebar.selectbox(
             'Which model would you like to use?',
-            ('Random Forest', 'Gradient Boosting', 'LightGBM')
+            ('Gradient Boosting','LightGBM','Random Forest')
         )
         
         # Mapping model option to actual model
-        if model_option == 'Random Forest':
+        if model_option == 'Gradient Boosting':
             model = gbc_model
-        elif model_option == 'Gradient Boosting':
-            model = gbc_model
-        else:
+        elif model_option == 'LightGBM':
             model = lightgbm_model
+        else:
+            model = rf_model
 
         # When the instructor clicks 'Predict', run the prediction
         if st.button("Predict Performance"):
