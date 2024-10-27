@@ -26346,3 +26346,17 @@ ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. 
 2024-10-27 16:07:32,596:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
 2024-10-27 16:07:32,644:INFO:Initializing load_model()
 2024-10-27 16:07:32,644:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-27 16:08:22,908:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-27 16:08:22,908:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-27 16:08:22,908:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-27 16:08:22,908:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-27 16:09:40,087:INFO:Initializing load_model()
+2024-10-27 16:09:40,087:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-27 16:09:40,213:INFO:Initializing load_model()
+2024-10-27 16:09:40,213:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-27 16:09:40,275:INFO:Initializing load_model()
+2024-10-27 16:09:40,275:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
