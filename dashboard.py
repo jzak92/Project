@@ -4,6 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 from pycaret.classification import *
+import joblib
 
 # Dummy credentials for instructors
 valid_users = {"mehboobali": "123", "jehanzaib": "456"}
