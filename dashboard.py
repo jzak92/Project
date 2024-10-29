@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-from pycaret.classification import *
+from pycaret.classification import load_model, setup, create_model, pull, tune_model, compare_models
 
 # Dummy credentials for instructors
 valid_users = {"mehboobali": "123", "jehanzaib": "456"}
@@ -124,7 +124,6 @@ else:
     ## 3-Heatmap Section
     elif action == "Plot Heatmap":
         st.header("Heatmap of Feature Correlations")
-        # data = pd.read_csv('Preprocessed_data1b.csv')
 
         # Apply label encoding to each categorical feature
         label_encoder = LabelEncoder()
