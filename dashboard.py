@@ -144,7 +144,8 @@ else:
     elif action == "Compare ML Models":
         st.header("Comparison of Different Models")
         # Compare models using PyCaret
-        clf = setup(data=data, 
+        sampled_data = data.sample(frac=0.5, random_state=42)  # Using only 50% of the data
+        clf = setup(data=sampled_data, 
                 target='Student_final_result',  # Actual target column
                 train_size=0.7,  # 70% training, 30% testing
                 normalize=True,  # normalize the features
