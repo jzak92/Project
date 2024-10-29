@@ -8,15 +8,6 @@ from pycaret.classification import *
 # Dummy credentials for instructors
 valid_users = {"mehboobali": "123", "jehanzaib": "456"}
 
-
-# Define the login function
-def login(username, password):
-    if username in valid_users and valid_users[username] == password:
-        st.session_state['logged_in'] = True
-        st.success(f"Welcome, {username}!")
-    else:
-        st.error("Invalid username or password.")
-
 # Initialize session state for login
 if 'logged_in' not in st.session_state:
     st.session_state['logged_in'] = False
@@ -26,24 +17,23 @@ if 'logged_in' not in st.session_state:
         st.image("ides.png", width=120)
         st.markdown("<h1 style='text-align: center;'>Instructor Dashboard Login</h1>", unsafe_allow_html=True)
         col1, col2, col3 = st.columns([1, 2, 1])
-
         with col2:
             # Create a login form
             with st.form(key='login_form'):
                 # Login form fields
                 username = st.text_input("Username")
                 password = st.text_input("Password", type="password")
-            
                 # Form submit button
                 submit_button = st.form_submit_button(label="Login")
-        
                 # Check login credentials when form is submitted
                 if submit_button:
-                 login(username, password)
+                    if username in valid_users and valid_users[username] == password:
+                        st.session_state['logged_in'] = True
+                        st.success(f"Welcome, {username}!")
+                    else:
+                        st.error("Invalid username or password.")
 else:
 # Main app content is shown only after login
-
-    st.cache_data.clear()
 
     # Load the dataset
     data = pd.read_csv('Preprocessed_data1b.csv')
@@ -60,7 +50,6 @@ else:
 
     # Sidebar for additional options
     st.sidebar.header("Choose Desired Option")
-
     # Action selection: Choose between Predict, View Student Data, etc.
     action = st.sidebar.radio("Select Action", 
                                 ("View Student Data", 
@@ -106,7 +95,6 @@ else:
             'Which model would you like to use?',
             ('Gradient Boosting','LightGBM','Random Forest')
         )
-        
         # Mapping model option to actual model
         if model_option == 'Gradient Boosting':
             model = gbc_model
@@ -136,10 +124,10 @@ else:
     ## 3-Heatmap Section
     elif action == "Plot Heatmap":
         st.header("Heatmap of Feature Correlations")
-        data = pd.read_csv('Preprocessed_data1b.csv')
+        # data = pd.read_csv('Preprocessed_data1b.csv')
 
-        label_encoder = LabelEncoder()
         # Apply label encoding to each categorical feature
+        label_encoder = LabelEncoder()
         data['Code_module'] = label_encoder.fit_transform(data['Code_module'])
         data['Region'] = label_encoder.fit_transform(data['Region'])
         data['Highest_education'] = label_encoder.fit_transform(data['Highest_education'])
@@ -155,23 +143,21 @@ else:
     ## 4-Model Comparison Section
     elif action == "Compare ML Models":
         st.header("Comparison of Different Models")
-        
         # Compare models using PyCaret
         clf = setup(data=data, 
                 target='Student_final_result',  # Actual target column
                 train_size=0.7,  # 70% training, 30% testing
                 normalize=True,  # normalize the features
                 session_id=42)  # session_id is for reproducibility
-        comparison_results = compare_models(n_select=3)
-        
+        comparison_results = compare_models(include=['rf', 'gbc', 'lightgbm'], n_select=3)
+
         # Pull the comparison table
         comparison_df = pull()
         # Filter the comparison_df to keep only the top 3 models
-        top_3_models = comparison_df.head(3)
-        
+        # top_3_models = comparison_df.head(3)
+        top_3_models = comparison_df.head(3)[['Model', 'Accuracy', 'F1', 'Prec.', 'Recall']]
         # Display the comparison as a table in Streamlit
         st.write(top_3_models)
-        
         # Visualize the model comparison results using a bar chart
         st.subheader("Bar Plot: Model Comparison by Accuracy")
         plt.figure(figsize=(10, 6))
