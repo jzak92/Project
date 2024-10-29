@@ -8,9 +8,6 @@ from pycaret.classification import *
 # Dummy credentials for instructors
 valid_users = {"mehboobali": "123", "jehanzaib": "456"}
 
-# Initialize session state for login
-if 'logged_in' not in st.session_state:
-    st.session_state['logged_in'] = False
 
 # Define the login function
 def login(username, password):
@@ -20,26 +17,29 @@ def login(username, password):
     else:
         st.error("Invalid username or password.")
 
-# If not logged in, show the login form
-if not st.session_state['logged_in']:
-    # Center the login form
-    st.image("ides.png", width=120)
-    st.markdown("<h1 style='text-align: center;'>Instructor Dashboard Login</h1>", unsafe_allow_html=True)
-    col1, col2, col3 = st.columns([1, 2, 1])
+# Initialize session state for login
+if 'logged_in' not in st.session_state:
+    st.session_state['logged_in'] = False
+    # If not logged in, show the login form
+    if not st.session_state['logged_in']:
+        # Center the login form
+        st.image("ides.png", width=120)
+        st.markdown("<h1 style='text-align: center;'>Instructor Dashboard Login</h1>", unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([1, 2, 1])
 
-    with col2:
-        # Create a login form
-        with st.form(key='login_form'):
-            # Login form fields
-            username = st.text_input("Username")
-            password = st.text_input("Password", type="password")
+        with col2:
+            # Create a login form
+            with st.form(key='login_form'):
+                # Login form fields
+                username = st.text_input("Username")
+                password = st.text_input("Password", type="password")
             
-            # Form submit button
-            submit_button = st.form_submit_button(label="Login")
+                # Form submit button
+                submit_button = st.form_submit_button(label="Login")
         
-        # Check login credentials when form is submitted
-        if submit_button:
-            login(username, password)
+                # Check login credentials when form is submitted
+                if submit_button:
+                 login(username, password)
 else:
 # Main app content is shown only after login
 
