@@ -142,17 +142,6 @@ else:
     ## 4-Model Comparison Section
     elif action == "Compare ML Models":
         st.header("Comparison of Different Models")
-        # # Compare models using PyCaret
-        # sampled_data = data.sample(frac=0.5, random_state=42)  # Using only 50% of the data
-        # clf = setup(data=data, 
-        #         target='Student_final_result',  # Actual target column
-        #         train_size=0.7,  # 70% training, 30% testing
-        #         normalize=True,  # normalize the features
-        #         session_id=42)  # session_id is for reproducibility
-        # comparison_results = compare_models(include=['rf', 'gbc', 'lightgbm'], n_select=3)
-
-        # Pull the comparison table
-        # comparison_df = pull()
         comparison_df = pd.read_csv('comparison_results.csv')
         # Filter the comparison_df to keep only the top 3 models
         top_3_models = comparison_df.head(3)[['Model', 'Accuracy', 'F1', 'Prec.', 'Recall']]
