@@ -40571,3 +40571,1923 @@ ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. 
                        oob_score=False, random_state=42, verbose=0,
                        warm_start=False)]
 2024-10-30 00:32:17,183:INFO:compare_models() successfully completed......................................
+2024-10-30 07:34:46,045:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-30 07:34:46,045:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-30 07:34:46,045:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-30 07:34:46,045:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-30 07:35:02,455:INFO:Initializing load_model()
+2024-10-30 07:35:02,464:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:02,585:INFO:Initializing load_model()
+2024-10-30 07:35:02,585:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:02,637:INFO:Initializing load_model()
+2024-10-30 07:35:02,637:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:07,150:INFO:Initializing load_model()
+2024-10-30 07:35:07,150:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:07,197:INFO:Initializing load_model()
+2024-10-30 07:35:07,197:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:07,251:INFO:Initializing load_model()
+2024-10-30 07:35:07,251:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:12,343:INFO:Initializing load_model()
+2024-10-30 07:35:12,343:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:12,384:INFO:Initializing load_model()
+2024-10-30 07:35:12,384:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:12,437:INFO:Initializing load_model()
+2024-10-30 07:35:12,437:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:35:12,873:INFO:PyCaret ClassificationExperiment
+2024-10-30 07:35:12,873:INFO:Logging name: clf-default-name
+2024-10-30 07:35:12,873:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-30 07:35:12,875:INFO:version 3.3.2
+2024-10-30 07:35:12,875:INFO:Initializing setup()
+2024-10-30 07:35:12,875:INFO:self.USI: 8d99
+2024-10-30 07:35:12,875:INFO:self._variable_keys: {'html_param', 'y', 'X_train', 'exp_name_log', 'target_param', 'y_test', '_available_plots', 'idx', 'is_multiclass', 'n_jobs_param', 'exp_id', 'fold_generator', 'y_train', 'pipeline', 'USI', 'fold_groups_param', 'data', 'memory', 'gpu_param', 'log_plots_param', '_ml_usecase', 'X', 'seed', 'logging_param', 'X_test', 'fold_shuffle_param', 'gpu_n_jobs_param', 'fix_imbalance'}
+2024-10-30 07:35:12,875:INFO:Checking environment
+2024-10-30 07:35:12,875:INFO:python_version: 3.11.9
+2024-10-30 07:35:12,875:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2024-10-30 07:35:12,875:INFO:machine: AMD64
+2024-10-30 07:35:12,891:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-30 07:35:12,911:INFO:Memory: svmem(total=21202853888, available=7605448704, percent=64.1, used=13597405184, free=7605448704)
+2024-10-30 07:35:12,911:INFO:Physical Core: 4
+2024-10-30 07:35:12,911:INFO:Logical Core: 8
+2024-10-30 07:35:12,911:INFO:Checking libraries
+2024-10-30 07:35:12,911:INFO:System:
+2024-10-30 07:35:12,911:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2024-10-30 07:35:12,911:INFO:executable: C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\python.exe
+2024-10-30 07:35:12,911:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-30 07:35:12,911:INFO:PyCaret required dependencies:
+2024-10-30 07:35:12,911:INFO:                 pip: 24.2
+2024-10-30 07:35:12,911:INFO:          setuptools: 65.5.0
+2024-10-30 07:35:12,911:INFO:             pycaret: 3.3.2
+2024-10-30 07:35:12,911:INFO:             IPython: 8.28.0
+2024-10-30 07:35:12,911:INFO:          ipywidgets: 8.1.5
+2024-10-30 07:35:12,911:INFO:                tqdm: 4.66.5
+2024-10-30 07:35:12,911:INFO:               numpy: 1.26.4
+2024-10-30 07:35:12,911:INFO:              pandas: 2.1.4
+2024-10-30 07:35:12,911:INFO:              jinja2: 3.1.4
+2024-10-30 07:35:12,911:INFO:               scipy: 1.11.4
+2024-10-30 07:35:12,911:INFO:              joblib: 1.3.2
+2024-10-30 07:35:12,911:INFO:             sklearn: 1.4.2
+2024-10-30 07:35:12,911:INFO:                pyod: 2.0.2
+2024-10-30 07:35:12,911:INFO:            imblearn: 0.12.4
+2024-10-30 07:35:12,911:INFO:   category_encoders: 2.6.4
+2024-10-30 07:35:12,911:INFO:            lightgbm: 4.5.0
+2024-10-30 07:35:12,911:INFO:               numba: 0.60.0
+2024-10-30 07:35:12,911:INFO:            requests: 2.32.3
+2024-10-30 07:35:12,911:INFO:          matplotlib: 3.7.5
+2024-10-30 07:35:12,911:INFO:          scikitplot: 0.3.7
+2024-10-30 07:35:12,921:INFO:         yellowbrick: 1.5
+2024-10-30 07:35:12,921:INFO:              plotly: 5.24.1
+2024-10-30 07:35:12,921:INFO:    plotly-resampler: Not installed
+2024-10-30 07:35:12,921:INFO:             kaleido: 0.2.1
+2024-10-30 07:35:12,921:INFO:           schemdraw: 0.15
+2024-10-30 07:35:12,921:INFO:         statsmodels: 0.14.4
+2024-10-30 07:35:12,921:INFO:              sktime: 0.26.0
+2024-10-30 07:35:12,921:INFO:               tbats: 1.1.3
+2024-10-30 07:35:12,921:INFO:            pmdarima: 2.0.4
+2024-10-30 07:35:12,921:INFO:              psutil: 6.0.0
+2024-10-30 07:35:12,921:INFO:          markupsafe: 3.0.0
+2024-10-30 07:35:12,921:INFO:             pickle5: Not installed
+2024-10-30 07:35:12,921:INFO:         cloudpickle: 3.0.0
+2024-10-30 07:35:12,921:INFO:         deprecation: 2.1.0
+2024-10-30 07:35:12,921:INFO:              xxhash: 3.5.0
+2024-10-30 07:35:12,921:INFO:           wurlitzer: Not installed
+2024-10-30 07:35:12,921:INFO:PyCaret optional dependencies:
+2024-10-30 07:35:12,953:INFO:                shap: Not installed
+2024-10-30 07:35:12,953:INFO:           interpret: Not installed
+2024-10-30 07:35:12,953:INFO:                umap: Not installed
+2024-10-30 07:35:12,953:INFO:     ydata_profiling: Not installed
+2024-10-30 07:35:12,953:INFO:  explainerdashboard: Not installed
+2024-10-30 07:35:12,953:INFO:             autoviz: Not installed
+2024-10-30 07:35:12,953:INFO:           fairlearn: Not installed
+2024-10-30 07:35:12,953:INFO:          deepchecks: Not installed
+2024-10-30 07:35:12,953:INFO:             xgboost: Not installed
+2024-10-30 07:35:12,953:INFO:            catboost: Not installed
+2024-10-30 07:35:12,953:INFO:              kmodes: Not installed
+2024-10-30 07:35:12,953:INFO:             mlxtend: Not installed
+2024-10-30 07:35:12,953:INFO:       statsforecast: Not installed
+2024-10-30 07:35:12,953:INFO:        tune_sklearn: Not installed
+2024-10-30 07:35:12,953:INFO:                 ray: Not installed
+2024-10-30 07:35:12,953:INFO:            hyperopt: Not installed
+2024-10-30 07:35:12,953:INFO:              optuna: Not installed
+2024-10-30 07:35:12,953:INFO:               skopt: Not installed
+2024-10-30 07:35:12,953:INFO:              mlflow: Not installed
+2024-10-30 07:35:12,953:INFO:              gradio: Not installed
+2024-10-30 07:35:12,953:INFO:             fastapi: Not installed
+2024-10-30 07:35:12,953:INFO:             uvicorn: Not installed
+2024-10-30 07:35:12,953:INFO:              m2cgen: Not installed
+2024-10-30 07:35:12,953:INFO:           evidently: Not installed
+2024-10-30 07:35:12,953:INFO:               fugue: Not installed
+2024-10-30 07:35:12,953:INFO:           streamlit: 1.39.0
+2024-10-30 07:35:12,953:INFO:             prophet: Not installed
+2024-10-30 07:35:12,953:INFO:None
+2024-10-30 07:35:12,953:INFO:Set up data.
+2024-10-30 07:35:12,984:INFO:Set up folding strategy.
+2024-10-30 07:35:12,984:INFO:Set up train/test split.
+2024-10-30 07:35:13,031:INFO:Set up index.
+2024-10-30 07:35:13,031:INFO:Assigning column types.
+2024-10-30 07:35:13,048:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-30 07:35:13,142:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-30 07:35:13,158:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-30 07:35:13,268:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:13,268:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:13,426:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-30 07:35:13,426:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-30 07:35:13,524:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:13,524:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:13,524:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-30 07:35:13,696:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-30 07:35:13,807:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:13,807:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:13,981:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-30 07:35:14,091:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:14,091:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:14,091:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-10-30 07:35:14,359:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:14,359:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:14,563:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:14,563:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:14,572:INFO:Preparing preprocessing pipeline...
+2024-10-30 07:35:14,578:INFO:Set up label encoding.
+2024-10-30 07:35:14,578:INFO:Set up simple imputation.
+2024-10-30 07:35:14,578:INFO:Set up encoding of categorical features.
+2024-10-30 07:35:14,578:INFO:Set up feature normalization.
+2024-10-30 07:35:14,877:INFO:Finished creating preprocessing pipeline.
+2024-10-30 07:35:14,909:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\JEHANZ~1\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Student_id', 'Assessment_score',
+                                             'Student_sum_click'],
+                                    transformer=SimpleImputer(add_indicator=Fals...
+                                             'Highest_education'],
+                                    transformer=OneHotEncoder(cols=['Code_module',
+                                                                    'Region',
+                                                                    'Highest_education'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True)))],
+         verbose=False)
+2024-10-30 07:35:14,909:INFO:Creating final display dataframe.
+2024-10-30 07:35:15,146:INFO:Setup _display_container:                     Description                             Value
+0                    Session id                                42
+1                        Target              Student_final_result
+2                   Target type                        Multiclass
+3                Target mapping  Distinction: 0, Fail: 1, Pass: 2
+4           Original data shape                        (10560, 7)
+5        Transformed data shape                       (10560, 29)
+6   Transformed train set shape                        (7391, 29)
+7    Transformed test set shape                        (3169, 29)
+8              Numeric features                                 3
+9          Categorical features                                 3
+10                   Preprocess                              True
+11              Imputation type                            simple
+12           Numeric imputation                              mean
+13       Categorical imputation                              mode
+14     Maximum one-hot encoding                                25
+15              Encoding method                              None
+16                    Normalize                              True
+17             Normalize method                            zscore
+18               Fold Generator                   StratifiedKFold
+19                  Fold Number                                10
+20                     CPU Jobs                                -1
+21                      Use GPU                             False
+22               Log Experiment                             False
+23              Experiment Name                  clf-default-name
+24                          USI                              8d99
+2024-10-30 07:35:15,431:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:15,431:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:15,715:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:15,715:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:35:15,715:INFO:setup() successfully completed in 2.87s...............
+2024-10-30 07:35:15,715:INFO:Initializing compare_models()
+2024-10-30 07:35:15,715:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, include=['rf', 'gbc', 'lightgbm'], exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=3, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, 'include': ['rf', 'gbc', 'lightgbm'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 3, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2024-10-30 07:35:15,715:INFO:Checking exceptions
+2024-10-30 07:35:15,731:INFO:Preparing display monitor
+2024-10-30 07:35:15,731:INFO:Initializing Random Forest Classifier
+2024-10-30 07:35:15,731:INFO:Total runtime is 0.0 minutes
+2024-10-30 07:35:15,742:INFO:SubProcess create_model() called ==================================
+2024-10-30 07:35:15,742:INFO:Initializing create_model()
+2024-10-30 07:35:15,742:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B6BCAECED0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:35:15,742:INFO:Checking exceptions
+2024-10-30 07:35:15,742:INFO:Importing libraries
+2024-10-30 07:35:15,742:INFO:Copying training dataset
+2024-10-30 07:35:15,747:INFO:Defining folds
+2024-10-30 07:35:15,747:INFO:Declaring metric variables
+2024-10-30 07:35:15,747:INFO:Importing untrained model
+2024-10-30 07:35:15,747:INFO:Random Forest Classifier Imported successfully
+2024-10-30 07:35:15,747:INFO:Starting cross validation
+2024-10-30 07:35:15,763:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-30 07:35:22,808:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,813:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,813:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,824:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,824:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,824:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,839:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,839:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,895:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,927:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,934:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,949:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,982:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,989:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:22,999:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,078:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,094:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,095:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,104:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,110:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,177:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,189:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,197:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,778:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,780:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,792:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,808:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,824:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,829:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:23,839:INFO:Calculating mean and std
+2024-10-30 07:35:23,839:INFO:Creating metrics dataframe
+2024-10-30 07:35:23,839:INFO:Uploading results into container
+2024-10-30 07:35:23,849:INFO:Uploading model into container now
+2024-10-30 07:35:23,849:INFO:_master_model_container: 1
+2024-10-30 07:35:23,849:INFO:_display_container: 2
+2024-10-30 07:35:23,849:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)
+2024-10-30 07:35:23,849:INFO:create_model() successfully completed......................................
+2024-10-30 07:35:24,030:INFO:SubProcess create_model() end ==================================
+2024-10-30 07:35:24,030:INFO:Creating metrics dataframe
+2024-10-30 07:35:24,030:INFO:Initializing Gradient Boosting Classifier
+2024-10-30 07:35:24,030:INFO:Total runtime is 0.13832727670669556 minutes
+2024-10-30 07:35:24,030:INFO:SubProcess create_model() called ==================================
+2024-10-30 07:35:24,030:INFO:Initializing create_model()
+2024-10-30 07:35:24,030:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B6BCAECED0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:35:24,045:INFO:Checking exceptions
+2024-10-30 07:35:24,045:INFO:Importing libraries
+2024-10-30 07:35:24,045:INFO:Copying training dataset
+2024-10-30 07:35:24,061:INFO:Defining folds
+2024-10-30 07:35:24,061:INFO:Declaring metric variables
+2024-10-30 07:35:24,061:INFO:Importing untrained model
+2024-10-30 07:35:24,061:INFO:Gradient Boosting Classifier Imported successfully
+2024-10-30 07:35:24,061:INFO:Starting cross validation
+2024-10-30 07:35:24,061:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-30 07:35:38,630:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:38,640:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:38,683:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:38,704:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:38,714:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:38,716:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:38,734:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:38,740:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:38,750:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:38,760:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:38,770:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:38,797:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:39,445:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:39,447:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:39,478:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:39,500:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:41,515:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:41,516:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:41,547:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:41,568:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:41,967:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:41,977:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:42,006:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:42,025:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:42,089:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:42,101:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:42,120:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:42,148:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:42,321:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:42,324:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:42,344:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:42,375:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:50,960:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:50,970:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:50,981:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:51,001:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:51,041:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:35:51,051:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:51,061:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:51,079:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:51,112:INFO:Calculating mean and std
+2024-10-30 07:35:51,114:INFO:Creating metrics dataframe
+2024-10-30 07:35:51,114:INFO:Uploading results into container
+2024-10-30 07:35:51,114:INFO:Uploading model into container now
+2024-10-30 07:35:51,114:INFO:_master_model_container: 2
+2024-10-30 07:35:51,114:INFO:_display_container: 2
+2024-10-30 07:35:51,114:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2024-10-30 07:35:51,114:INFO:create_model() successfully completed......................................
+2024-10-30 07:35:51,279:INFO:SubProcess create_model() end ==================================
+2024-10-30 07:35:51,279:INFO:Creating metrics dataframe
+2024-10-30 07:35:51,293:INFO:Initializing Light Gradient Boosting Machine
+2024-10-30 07:35:51,293:INFO:Total runtime is 0.5926991701126099 minutes
+2024-10-30 07:35:51,293:INFO:SubProcess create_model() called ==================================
+2024-10-30 07:35:51,293:INFO:Initializing create_model()
+2024-10-30 07:35:51,293:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B6BCAECED0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:35:51,293:INFO:Checking exceptions
+2024-10-30 07:35:51,293:INFO:Importing libraries
+2024-10-30 07:35:51,293:INFO:Copying training dataset
+2024-10-30 07:35:51,320:INFO:Defining folds
+2024-10-30 07:35:51,320:INFO:Declaring metric variables
+2024-10-30 07:35:51,320:INFO:Importing untrained model
+2024-10-30 07:35:51,320:INFO:Light Gradient Boosting Machine Imported successfully
+2024-10-30 07:35:51,320:INFO:Starting cross validation
+2024-10-30 07:35:51,335:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-30 07:35:58,480:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,490:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,500:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,504:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,510:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,510:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,592:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,602:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,612:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,811:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,824:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,836:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,876:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,885:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:58,896:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,347:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,354:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,354:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,365:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,365:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,365:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,365:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,365:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:35:59,382:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:36:00,288:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:36:00,288:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:36:00,305:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:36:00,307:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:36:00,316:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:36:00,318:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:36:00,338:INFO:Calculating mean and std
+2024-10-30 07:36:00,338:INFO:Creating metrics dataframe
+2024-10-30 07:36:00,338:INFO:Uploading results into container
+2024-10-30 07:36:00,338:INFO:Uploading model into container now
+2024-10-30 07:36:00,338:INFO:_master_model_container: 3
+2024-10-30 07:36:00,338:INFO:_display_container: 2
+2024-10-30 07:36:00,338:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-10-30 07:36:00,338:INFO:create_model() successfully completed......................................
+2024-10-30 07:36:00,460:INFO:SubProcess create_model() end ==================================
+2024-10-30 07:36:00,460:INFO:Creating metrics dataframe
+2024-10-30 07:36:00,474:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  .applymap(highlight_cols, subset=["TT (Sec)"])
+
+2024-10-30 07:36:00,474:INFO:Initializing create_model()
+2024-10-30 07:36:00,480:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:36:00,480:INFO:Checking exceptions
+2024-10-30 07:36:00,482:INFO:Importing libraries
+2024-10-30 07:36:00,482:INFO:Copying training dataset
+2024-10-30 07:36:00,488:INFO:Defining folds
+2024-10-30 07:36:00,488:INFO:Declaring metric variables
+2024-10-30 07:36:00,490:INFO:Importing untrained model
+2024-10-30 07:36:00,490:INFO:Declaring custom model
+2024-10-30 07:36:00,490:INFO:Gradient Boosting Classifier Imported successfully
+2024-10-30 07:36:00,490:INFO:Cross validation set to False
+2024-10-30 07:36:00,490:INFO:Fitting Model
+2024-10-30 07:36:05,897:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2024-10-30 07:36:05,897:INFO:create_model() successfully completed......................................
+2024-10-30 07:36:06,025:INFO:Initializing create_model()
+2024-10-30 07:36:06,025:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:36:06,025:INFO:Checking exceptions
+2024-10-30 07:36:06,025:INFO:Importing libraries
+2024-10-30 07:36:06,025:INFO:Copying training dataset
+2024-10-30 07:36:06,052:INFO:Defining folds
+2024-10-30 07:36:06,052:INFO:Declaring metric variables
+2024-10-30 07:36:06,052:INFO:Importing untrained model
+2024-10-30 07:36:06,052:INFO:Declaring custom model
+2024-10-30 07:36:06,056:INFO:Light Gradient Boosting Machine Imported successfully
+2024-10-30 07:36:06,061:INFO:Cross validation set to False
+2024-10-30 07:36:06,061:INFO:Fitting Model
+2024-10-30 07:36:06,742:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-10-30 07:36:06,742:INFO:create_model() successfully completed......................................
+2024-10-30 07:36:06,839:INFO:Initializing create_model()
+2024-10-30 07:36:06,839:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:36:06,839:INFO:Checking exceptions
+2024-10-30 07:36:06,839:INFO:Importing libraries
+2024-10-30 07:36:06,839:INFO:Copying training dataset
+2024-10-30 07:36:06,839:INFO:Defining folds
+2024-10-30 07:36:06,839:INFO:Declaring metric variables
+2024-10-30 07:36:06,839:INFO:Importing untrained model
+2024-10-30 07:36:06,839:INFO:Declaring custom model
+2024-10-30 07:36:06,839:INFO:Random Forest Classifier Imported successfully
+2024-10-30 07:36:06,839:INFO:Cross validation set to False
+2024-10-30 07:36:06,839:INFO:Fitting Model
+2024-10-30 07:36:07,283:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)
+2024-10-30 07:36:07,283:INFO:create_model() successfully completed......................................
+2024-10-30 07:36:07,370:INFO:_master_model_container: 3
+2024-10-30 07:36:07,370:INFO:_display_container: 2
+2024-10-30 07:36:07,381:INFO:[GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)]
+2024-10-30 07:36:07,381:INFO:compare_models() successfully completed......................................
+2024-10-30 07:40:28,765:INFO:Initializing load_model()
+2024-10-30 07:40:28,765:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:28,780:INFO:Initializing load_model()
+2024-10-30 07:40:28,780:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:28,811:INFO:Initializing load_model()
+2024-10-30 07:40:28,811:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:32,860:INFO:Initializing load_model()
+2024-10-30 07:40:32,860:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:32,876:INFO:Initializing load_model()
+2024-10-30 07:40:32,876:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:32,891:INFO:Initializing load_model()
+2024-10-30 07:40:32,891:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:42,048:INFO:Initializing load_model()
+2024-10-30 07:40:42,048:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:42,068:INFO:Initializing load_model()
+2024-10-30 07:40:42,068:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:42,092:INFO:Initializing load_model()
+2024-10-30 07:40:42,092:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:42,260:INFO:Initializing load_model()
+2024-10-30 07:40:42,260:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:42,406:INFO:Initializing load_model()
+2024-10-30 07:40:42,406:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:42,440:INFO:Initializing load_model()
+2024-10-30 07:40:42,440:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:42,620:INFO:Initializing predict_model()
+2024-10-30 07:40:42,620:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4DF2BD0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\JEHANZ~1\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Student_id', 'Assessment_score',
+                                             'Student_sum_click'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['C...
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['Code_module', 'Region',
+                                             'Highest_education'],
+                                    transformer=OneHotEncoder(cols=['Code_module',
+                                                                    'Region',
+                                                                    'Highest_education'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', GradientBoostingClassifier(random_state=42))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001B68F54C360>)
+2024-10-30 07:40:42,620:INFO:Checking exceptions
+2024-10-30 07:40:42,620:INFO:Preloading libraries
+2024-10-30 07:40:42,620:INFO:Set up data.
+2024-10-30 07:40:42,635:INFO:Set up index.
+2024-10-30 07:40:48,690:INFO:Initializing load_model()
+2024-10-30 07:40:48,690:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:48,737:INFO:Initializing load_model()
+2024-10-30 07:40:48,737:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:48,779:INFO:Initializing load_model()
+2024-10-30 07:40:48,779:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:40:49,021:INFO:PyCaret ClassificationExperiment
+2024-10-30 07:40:49,021:INFO:Logging name: clf-default-name
+2024-10-30 07:40:49,021:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-30 07:40:49,021:INFO:version 3.3.2
+2024-10-30 07:40:49,021:INFO:Initializing setup()
+2024-10-30 07:40:49,021:INFO:self.USI: e663
+2024-10-30 07:40:49,021:INFO:self._variable_keys: {'html_param', 'y', 'X_train', 'exp_name_log', 'target_param', 'y_test', '_available_plots', 'idx', 'is_multiclass', 'n_jobs_param', 'exp_id', 'fold_generator', 'y_train', 'pipeline', 'USI', 'fold_groups_param', 'data', 'memory', 'gpu_param', 'log_plots_param', '_ml_usecase', 'X', 'seed', 'logging_param', 'X_test', 'fold_shuffle_param', 'gpu_n_jobs_param', 'fix_imbalance'}
+2024-10-30 07:40:49,021:INFO:Checking environment
+2024-10-30 07:40:49,021:INFO:python_version: 3.11.9
+2024-10-30 07:40:49,021:INFO:python_build: ('tags/v3.11.9:de54cf5', 'Apr  2 2024 10:12:12')
+2024-10-30 07:40:49,021:INFO:machine: AMD64
+2024-10-30 07:40:49,029:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-30 07:40:49,031:INFO:Memory: svmem(total=21202853888, available=7006482432, percent=67.0, used=14196371456, free=7006482432)
+2024-10-30 07:40:49,031:INFO:Physical Core: 4
+2024-10-30 07:40:49,031:INFO:Logical Core: 8
+2024-10-30 07:40:49,031:INFO:Checking libraries
+2024-10-30 07:40:49,031:INFO:System:
+2024-10-30 07:40:49,031:INFO:    python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+2024-10-30 07:40:49,031:INFO:executable: C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\python.exe
+2024-10-30 07:40:49,031:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-30 07:40:49,031:INFO:PyCaret required dependencies:
+2024-10-30 07:40:49,031:INFO:                 pip: 24.2
+2024-10-30 07:40:49,031:INFO:          setuptools: 65.5.0
+2024-10-30 07:40:49,031:INFO:             pycaret: 3.3.2
+2024-10-30 07:40:49,031:INFO:             IPython: 8.28.0
+2024-10-30 07:40:49,031:INFO:          ipywidgets: 8.1.5
+2024-10-30 07:40:49,031:INFO:                tqdm: 4.66.5
+2024-10-30 07:40:49,031:INFO:               numpy: 1.26.4
+2024-10-30 07:40:49,031:INFO:              pandas: 2.1.4
+2024-10-30 07:40:49,031:INFO:              jinja2: 3.1.4
+2024-10-30 07:40:49,031:INFO:               scipy: 1.11.4
+2024-10-30 07:40:49,031:INFO:              joblib: 1.3.2
+2024-10-30 07:40:49,044:INFO:             sklearn: 1.4.2
+2024-10-30 07:40:49,044:INFO:                pyod: 2.0.2
+2024-10-30 07:40:49,044:INFO:            imblearn: 0.12.4
+2024-10-30 07:40:49,044:INFO:   category_encoders: 2.6.4
+2024-10-30 07:40:49,044:INFO:            lightgbm: 4.5.0
+2024-10-30 07:40:49,044:INFO:               numba: 0.60.0
+2024-10-30 07:40:49,044:INFO:            requests: 2.32.3
+2024-10-30 07:40:49,046:INFO:          matplotlib: 3.7.5
+2024-10-30 07:40:49,046:INFO:          scikitplot: 0.3.7
+2024-10-30 07:40:49,046:INFO:         yellowbrick: 1.5
+2024-10-30 07:40:49,046:INFO:              plotly: 5.24.1
+2024-10-30 07:40:49,046:INFO:    plotly-resampler: Not installed
+2024-10-30 07:40:49,046:INFO:             kaleido: 0.2.1
+2024-10-30 07:40:49,046:INFO:           schemdraw: 0.15
+2024-10-30 07:40:49,046:INFO:         statsmodels: 0.14.4
+2024-10-30 07:40:49,046:INFO:              sktime: 0.26.0
+2024-10-30 07:40:49,046:INFO:               tbats: 1.1.3
+2024-10-30 07:40:49,046:INFO:            pmdarima: 2.0.4
+2024-10-30 07:40:49,046:INFO:              psutil: 6.0.0
+2024-10-30 07:40:49,046:INFO:          markupsafe: 3.0.0
+2024-10-30 07:40:49,046:INFO:             pickle5: Not installed
+2024-10-30 07:40:49,046:INFO:         cloudpickle: 3.0.0
+2024-10-30 07:40:49,046:INFO:         deprecation: 2.1.0
+2024-10-30 07:40:49,046:INFO:              xxhash: 3.5.0
+2024-10-30 07:40:49,046:INFO:           wurlitzer: Not installed
+2024-10-30 07:40:49,046:INFO:PyCaret optional dependencies:
+2024-10-30 07:40:49,046:INFO:                shap: Not installed
+2024-10-30 07:40:49,046:INFO:           interpret: Not installed
+2024-10-30 07:40:49,046:INFO:                umap: Not installed
+2024-10-30 07:40:49,046:INFO:     ydata_profiling: Not installed
+2024-10-30 07:40:49,046:INFO:  explainerdashboard: Not installed
+2024-10-30 07:40:49,046:INFO:             autoviz: Not installed
+2024-10-30 07:40:49,046:INFO:           fairlearn: Not installed
+2024-10-30 07:40:49,046:INFO:          deepchecks: Not installed
+2024-10-30 07:40:49,046:INFO:             xgboost: Not installed
+2024-10-30 07:40:49,046:INFO:            catboost: Not installed
+2024-10-30 07:40:49,046:INFO:              kmodes: Not installed
+2024-10-30 07:40:49,046:INFO:             mlxtend: Not installed
+2024-10-30 07:40:49,046:INFO:       statsforecast: Not installed
+2024-10-30 07:40:49,046:INFO:        tune_sklearn: Not installed
+2024-10-30 07:40:49,046:INFO:                 ray: Not installed
+2024-10-30 07:40:49,046:INFO:            hyperopt: Not installed
+2024-10-30 07:40:49,046:INFO:              optuna: Not installed
+2024-10-30 07:40:49,046:INFO:               skopt: Not installed
+2024-10-30 07:40:49,046:INFO:              mlflow: Not installed
+2024-10-30 07:40:49,046:INFO:              gradio: Not installed
+2024-10-30 07:40:49,046:INFO:             fastapi: Not installed
+2024-10-30 07:40:49,046:INFO:             uvicorn: Not installed
+2024-10-30 07:40:49,046:INFO:              m2cgen: Not installed
+2024-10-30 07:40:49,046:INFO:           evidently: Not installed
+2024-10-30 07:40:49,046:INFO:               fugue: Not installed
+2024-10-30 07:40:49,046:INFO:           streamlit: 1.39.0
+2024-10-30 07:40:49,046:INFO:             prophet: Not installed
+2024-10-30 07:40:49,046:INFO:None
+2024-10-30 07:40:49,046:INFO:Set up data.
+2024-10-30 07:40:49,085:INFO:Set up folding strategy.
+2024-10-30 07:40:49,085:INFO:Set up train/test split.
+2024-10-30 07:40:49,117:INFO:Set up index.
+2024-10-30 07:40:49,117:INFO:Assigning column types.
+2024-10-30 07:40:49,132:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-30 07:40:49,227:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-30 07:40:49,242:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-30 07:40:49,312:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,312:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,367:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-30 07:40:49,367:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-30 07:40:49,415:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,415:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,415:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-30 07:40:49,462:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-30 07:40:49,529:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,529:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,651:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-30 07:40:49,741:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,745:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,745:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-10-30 07:40:49,945:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:49,945:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:50,063:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:50,063:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:50,063:INFO:Preparing preprocessing pipeline...
+2024-10-30 07:40:50,075:INFO:Set up label encoding.
+2024-10-30 07:40:50,075:INFO:Set up simple imputation.
+2024-10-30 07:40:50,078:INFO:Set up encoding of categorical features.
+2024-10-30 07:40:50,078:INFO:Set up feature normalization.
+2024-10-30 07:40:50,265:INFO:Finished creating preprocessing pipeline.
+2024-10-30 07:40:50,285:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\JEHANZ~1\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Student_id', 'Assessment_score',
+                                             'Student_sum_click'],
+                                    transformer=SimpleImputer(add_indicator=Fals...
+                                             'Highest_education'],
+                                    transformer=OneHotEncoder(cols=['Code_module',
+                                                                    'Region',
+                                                                    'Highest_education'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True)))],
+         verbose=False)
+2024-10-30 07:40:50,292:INFO:Creating final display dataframe.
+2024-10-30 07:40:50,472:INFO:Setup _display_container:                     Description                             Value
+0                    Session id                                42
+1                        Target              Student_final_result
+2                   Target type                        Multiclass
+3                Target mapping  Distinction: 0, Fail: 1, Pass: 2
+4           Original data shape                        (21120, 7)
+5        Transformed data shape                       (21120, 29)
+6   Transformed train set shape                       (14783, 29)
+7    Transformed test set shape                        (6337, 29)
+8              Numeric features                                 3
+9          Categorical features                                 3
+10                   Preprocess                              True
+11              Imputation type                            simple
+12           Numeric imputation                              mean
+13       Categorical imputation                              mode
+14     Maximum one-hot encoding                                25
+15              Encoding method                              None
+16                    Normalize                              True
+17             Normalize method                            zscore
+18               Fold Generator                   StratifiedKFold
+19                  Fold Number                                10
+20                     CPU Jobs                                -1
+21                      Use GPU                             False
+22               Log Experiment                             False
+23              Experiment Name                  clf-default-name
+24                          USI                              e663
+2024-10-30 07:40:50,677:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:50,677:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:50,850:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:50,850:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-30 07:40:50,865:INFO:setup() successfully completed in 1.87s...............
+2024-10-30 07:40:50,866:INFO:Initializing compare_models()
+2024-10-30 07:40:50,866:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4610A10>, include=['rf', 'gbc', 'lightgbm'], exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=3, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4610A10>, 'include': ['rf', 'gbc', 'lightgbm'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 3, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2024-10-30 07:40:50,866:INFO:Checking exceptions
+2024-10-30 07:40:50,868:INFO:Preparing display monitor
+2024-10-30 07:40:50,868:INFO:Initializing Random Forest Classifier
+2024-10-30 07:40:50,868:INFO:Total runtime is 0.0 minutes
+2024-10-30 07:40:50,868:INFO:SubProcess create_model() called ==================================
+2024-10-30 07:40:50,868:INFO:Initializing create_model()
+2024-10-30 07:40:50,868:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4610A10>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B6B5917010>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:40:50,868:INFO:Checking exceptions
+2024-10-30 07:40:50,868:INFO:Importing libraries
+2024-10-30 07:40:50,868:INFO:Copying training dataset
+2024-10-30 07:40:50,881:INFO:Defining folds
+2024-10-30 07:40:50,881:INFO:Declaring metric variables
+2024-10-30 07:40:50,881:INFO:Importing untrained model
+2024-10-30 07:40:50,881:INFO:Random Forest Classifier Imported successfully
+2024-10-30 07:40:50,881:INFO:Starting cross validation
+2024-10-30 07:40:50,892:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-30 07:40:55,186:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,212:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,228:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,234:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,253:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,265:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,265:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,271:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,288:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,297:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,304:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,304:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,324:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,324:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,334:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,334:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,334:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,345:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,355:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,365:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,377:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,427:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,439:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:55,458:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:56,702:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:56,717:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:56,722:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:56,722:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:56,734:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:56,741:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:40:56,771:INFO:Calculating mean and std
+2024-10-30 07:40:56,771:INFO:Creating metrics dataframe
+2024-10-30 07:40:56,771:INFO:Uploading results into container
+2024-10-30 07:40:56,771:INFO:Uploading model into container now
+2024-10-30 07:40:56,771:INFO:_master_model_container: 1
+2024-10-30 07:40:56,771:INFO:_display_container: 2
+2024-10-30 07:40:56,771:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)
+2024-10-30 07:40:56,771:INFO:create_model() successfully completed......................................
+2024-10-30 07:40:56,862:INFO:SubProcess create_model() end ==================================
+2024-10-30 07:40:56,862:INFO:Creating metrics dataframe
+2024-10-30 07:40:56,862:INFO:Initializing Gradient Boosting Classifier
+2024-10-30 07:40:56,862:INFO:Total runtime is 0.0998986005783081 minutes
+2024-10-30 07:40:56,862:INFO:SubProcess create_model() called ==================================
+2024-10-30 07:40:56,862:INFO:Initializing create_model()
+2024-10-30 07:40:56,862:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4610A10>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B6B5917010>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:40:56,862:INFO:Checking exceptions
+2024-10-30 07:40:56,862:INFO:Importing libraries
+2024-10-30 07:40:56,862:INFO:Copying training dataset
+2024-10-30 07:40:56,877:INFO:Defining folds
+2024-10-30 07:40:56,877:INFO:Declaring metric variables
+2024-10-30 07:40:56,877:INFO:Importing untrained model
+2024-10-30 07:40:56,877:INFO:Gradient Boosting Classifier Imported successfully
+2024-10-30 07:40:56,877:INFO:Starting cross validation
+2024-10-30 07:40:56,877:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-30 07:41:10,451:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:10,462:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,462:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:10,476:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,482:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,493:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,502:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,512:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,573:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:10,584:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,604:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,625:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,658:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:10,665:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,689:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:10,713:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,613:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:12,614:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,643:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,670:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,766:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:12,776:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,776:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:12,786:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:12,786:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,786:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,797:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,806:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,816:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,816:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,829:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:12,837:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:20,428:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:20,439:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:20,451:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:20,469:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:20,546:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:204: FitFailedWarning: Metric 'make_scorer(roc_auc_score, response_method=('decision_function', 'predict_proba'), average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_scorer.py", line 350, in _score
+    return self._sign * self._score_func(y_true, y_pred, **scoring_kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_ranking.py", line 707, in _multiclass_roc_auc_score
+    raise ValueError(
+ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. they should sum up to 1.0 over classes
+
+  warnings.warn(
+
+2024-10-30 07:41:20,551:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:20,571:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:20,581:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:20,612:INFO:Calculating mean and std
+2024-10-30 07:41:20,612:INFO:Creating metrics dataframe
+2024-10-30 07:41:20,622:INFO:Uploading results into container
+2024-10-30 07:41:20,622:INFO:Uploading model into container now
+2024-10-30 07:41:20,622:INFO:_master_model_container: 2
+2024-10-30 07:41:20,622:INFO:_display_container: 2
+2024-10-30 07:41:20,622:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2024-10-30 07:41:20,622:INFO:create_model() successfully completed......................................
+2024-10-30 07:41:20,717:INFO:SubProcess create_model() end ==================================
+2024-10-30 07:41:20,717:INFO:Creating metrics dataframe
+2024-10-30 07:41:20,722:INFO:Initializing Light Gradient Boosting Machine
+2024-10-30 07:41:20,722:INFO:Total runtime is 0.49756213823954265 minutes
+2024-10-30 07:41:20,722:INFO:SubProcess create_model() called ==================================
+2024-10-30 07:41:20,722:INFO:Initializing create_model()
+2024-10-30 07:41:20,722:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4610A10>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B6B5917010>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:41:20,722:INFO:Checking exceptions
+2024-10-30 07:41:20,722:INFO:Importing libraries
+2024-10-30 07:41:20,722:INFO:Copying training dataset
+2024-10-30 07:41:20,724:INFO:Defining folds
+2024-10-30 07:41:20,724:INFO:Declaring metric variables
+2024-10-30 07:41:20,724:INFO:Importing untrained model
+2024-10-30 07:41:20,724:INFO:Light Gradient Boosting Machine Imported successfully
+2024-10-30 07:41:20,724:INFO:Starting cross validation
+2024-10-30 07:41:20,724:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-30 07:41:25,255:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:25,286:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:25,344:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:25,478:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:25,478:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:25,493:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:25,503:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:25,513:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:25,523:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,626:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,665:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,705:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,730:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,758:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,783:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,842:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,859:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:26,879:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:27,075:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:27,092:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:27,109:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:27,173:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:27,191:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:27,213:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:28,177:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:28,195:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:28,212:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:28,405:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:28,415:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:28,435:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Pass') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-10-30 07:41:28,466:INFO:Calculating mean and std
+2024-10-30 07:41:28,466:INFO:Creating metrics dataframe
+2024-10-30 07:41:28,466:INFO:Uploading results into container
+2024-10-30 07:41:28,466:INFO:Uploading model into container now
+2024-10-30 07:41:28,466:INFO:_master_model_container: 3
+2024-10-30 07:41:28,466:INFO:_display_container: 2
+2024-10-30 07:41:28,466:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-10-30 07:41:28,466:INFO:create_model() successfully completed......................................
+2024-10-30 07:41:28,580:INFO:SubProcess create_model() end ==================================
+2024-10-30 07:41:28,580:INFO:Creating metrics dataframe
+2024-10-30 07:41:28,580:WARNING:C:\Users\Jehan Zaib Ali Khan\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  .applymap(highlight_cols, subset=["TT (Sec)"])
+
+2024-10-30 07:41:28,596:INFO:Initializing create_model()
+2024-10-30 07:41:28,596:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4610A10>, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:41:28,596:INFO:Checking exceptions
+2024-10-30 07:41:28,596:INFO:Importing libraries
+2024-10-30 07:41:28,596:INFO:Copying training dataset
+2024-10-30 07:41:28,613:INFO:Defining folds
+2024-10-30 07:41:28,613:INFO:Declaring metric variables
+2024-10-30 07:41:28,613:INFO:Importing untrained model
+2024-10-30 07:41:28,613:INFO:Declaring custom model
+2024-10-30 07:41:28,613:INFO:Gradient Boosting Classifier Imported successfully
+2024-10-30 07:41:28,629:INFO:Cross validation set to False
+2024-10-30 07:41:28,629:INFO:Fitting Model
+2024-10-30 07:41:40,156:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2024-10-30 07:41:40,156:INFO:create_model() successfully completed......................................
+2024-10-30 07:41:40,281:INFO:Initializing create_model()
+2024-10-30 07:41:40,281:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4610A10>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:41:40,281:INFO:Checking exceptions
+2024-10-30 07:41:40,282:INFO:Importing libraries
+2024-10-30 07:41:40,282:INFO:Copying training dataset
+2024-10-30 07:41:40,295:INFO:Defining folds
+2024-10-30 07:41:40,295:INFO:Declaring metric variables
+2024-10-30 07:41:40,295:INFO:Importing untrained model
+2024-10-30 07:41:40,295:INFO:Declaring custom model
+2024-10-30 07:41:40,297:INFO:Light Gradient Boosting Machine Imported successfully
+2024-10-30 07:41:40,301:INFO:Cross validation set to False
+2024-10-30 07:41:40,302:INFO:Fitting Model
+2024-10-30 07:41:40,923:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-10-30 07:41:40,923:INFO:create_model() successfully completed......................................
+2024-10-30 07:41:41,022:INFO:Initializing create_model()
+2024-10-30 07:41:41,022:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B6B4610A10>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-30 07:41:41,022:INFO:Checking exceptions
+2024-10-30 07:41:41,023:INFO:Importing libraries
+2024-10-30 07:41:41,023:INFO:Copying training dataset
+2024-10-30 07:41:41,029:INFO:Defining folds
+2024-10-30 07:41:41,029:INFO:Declaring metric variables
+2024-10-30 07:41:41,029:INFO:Importing untrained model
+2024-10-30 07:41:41,029:INFO:Declaring custom model
+2024-10-30 07:41:41,030:INFO:Random Forest Classifier Imported successfully
+2024-10-30 07:41:41,031:INFO:Cross validation set to False
+2024-10-30 07:41:41,031:INFO:Fitting Model
+2024-10-30 07:41:41,812:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)
+2024-10-30 07:41:41,812:INFO:create_model() successfully completed......................................
+2024-10-30 07:41:41,919:INFO:_master_model_container: 3
+2024-10-30 07:41:41,919:INFO:_display_container: 2
+2024-10-30 07:41:41,921:INFO:[GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)]
+2024-10-30 07:41:41,922:INFO:compare_models() successfully completed......................................
+2024-10-30 07:45:31,451:INFO:Initializing load_model()
+2024-10-30 07:45:31,451:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:45:31,505:INFO:Initializing load_model()
+2024-10-30 07:45:31,505:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:45:31,557:INFO:Initializing load_model()
+2024-10-30 07:45:31,557:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:45:34,829:INFO:Initializing load_model()
+2024-10-30 07:45:34,829:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:45:34,873:INFO:Initializing load_model()
+2024-10-30 07:45:34,873:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:45:34,925:INFO:Initializing load_model()
+2024-10-30 07:45:34,925:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:45:38,618:INFO:Initializing load_model()
+2024-10-30 07:45:38,618:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:45:38,681:INFO:Initializing load_model()
+2024-10-30 07:45:38,681:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:45:38,747:INFO:Initializing load_model()
+2024-10-30 07:45:38,747:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)

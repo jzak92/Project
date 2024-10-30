@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-from pycaret.classification import load_model, setup, create_model, pull, tune_model, compare_models
+from pycaret.classification import*
 
 # Dummy credentials for instructors
 valid_users = {"mehboobali": "123", "jehanzaib": "456"}
@@ -142,19 +142,19 @@ else:
     ## 4-Model Comparison Section
     elif action == "Compare ML Models":
         st.header("Comparison of Different Models")
-        # Compare models using PyCaret
-        sampled_data = data.sample(frac=0.5, random_state=42)  # Using only 50% of the data
-        clf = setup(data=sampled_data, 
-                target='Student_final_result',  # Actual target column
-                train_size=0.7,  # 70% training, 30% testing
-                normalize=True,  # normalize the features
-                session_id=42)  # session_id is for reproducibility
-        comparison_results = compare_models(include=['rf', 'gbc', 'lightgbm'], n_select=3)
+        # # Compare models using PyCaret
+        # sampled_data = data.sample(frac=0.5, random_state=42)  # Using only 50% of the data
+        # clf = setup(data=data, 
+        #         target='Student_final_result',  # Actual target column
+        #         train_size=0.7,  # 70% training, 30% testing
+        #         normalize=True,  # normalize the features
+        #         session_id=42)  # session_id is for reproducibility
+        # comparison_results = compare_models(include=['rf', 'gbc', 'lightgbm'], n_select=3)
 
         # Pull the comparison table
-        comparison_df = pull()
+        # comparison_df = pull()
+        comparison_df = pd.read_csv('comparison_results.csv')
         # Filter the comparison_df to keep only the top 3 models
-        # top_3_models = comparison_df.head(3)
         top_3_models = comparison_df.head(3)[['Model', 'Accuracy', 'F1', 'Prec.', 'Recall']]
         # Display the comparison as a table in Streamlit
         st.write(top_3_models)

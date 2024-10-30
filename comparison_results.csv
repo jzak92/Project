@@ -1,0 +1,4 @@
+Model,Accuracy,AUC,Recall,Prec.,F1,Kappa,MCC,TT (Sec)
+Gradient Boosting Classifier,0.8015,0.0,0.8015,0.804,0.7934,0.6222,0.634,2.373
+Light Gradient Boosting Machine,0.7991,0.9041,0.7991,0.7998,0.7927,0.6216,0.6302,0.774
+Random Forest Classifier,0.7921,0.8874,0.7921,0.791,0.7853,0.6091,0.6169,0.588
