@@ -33,11 +33,10 @@ if 'logged_in' not in st.session_state:
                     else:
                         st.error("Invalid username or password.")
 else:
-# Main app content is shown only after login
+## Main app content is shown only after login
 
     # Load the dataset
-    data = pd.read_csv('Preprocessed_data1b.csv')
-
+    data = pd.read_csv('Preprocessed_data.csv')
     # Load the models
     gbc_model = load_model('GradientBoostingClassifier1')
     lightgbm_model = load_model('LGBMClassifier2')
@@ -46,7 +45,6 @@ else:
     # Streamlit app interface
     st.image("ides.png", width=120, )
     st.markdown("<h1 style='text-align: center; color: black;'>Instructor Dashboard for E-Learning Systems</h1>", unsafe_allow_html=True)
-    # st.title("Instructor Dashboard for E-Learning Systems")
 
     # Sidebar for additional options
     st.sidebar.header("Choose Desired Option")
@@ -65,12 +63,10 @@ else:
         # Input fields for Student ID and Code Module
         student_id = st.text_input("Enter Student ID")
         code_module = st.selectbox("Select Code Module", options=data['Code_module'].unique())
-        
         # Search for the student data when the user clicks the button
         if st.button("Search"):
             # Filter the data based on Student ID and Code Module
             student_data = data[(data['Student_id'] == int(student_id)) & (data['Code_module'] == code_module)]
-            
             # Display the student's data if found
             if not student_data.empty:
                 st.subheader(f"Details for Student ID: {student_id} in Module: {code_module}")
@@ -131,7 +127,6 @@ else:
         data['Region'] = label_encoder.fit_transform(data['Region'])
         data['Highest_education'] = label_encoder.fit_transform(data['Highest_education'])
         data['Student_final_result'] = label_encoder.fit_transform(data['Student_final_result'])
-
         # Plot the heatmap using seaborn
         plt.figure(figsize=(10, 8))
         correlation_matrix = data.corr()
@@ -142,15 +137,16 @@ else:
     ## 4-Model Comparison Section
     elif action == "Compare ML Models":
         st.header("Comparison of Different Models")
+        
         comparison_df = pd.read_csv('comparison_results.csv')
-        # Filter the comparison_df to keep only the top 3 models
-        top_3_models = comparison_df.head(3)[['Model', 'Accuracy', 'F1', 'Prec.', 'Recall']]
+        # Filter the comparison
+        comp_models = comparison_df.head(3)[['Model', 'Accuracy', 'F1', 'Prec.', 'Recall']]
         # Display the comparison as a table in Streamlit
-        st.write(top_3_models)
+        st.write(comp_models)
         # Visualize the model comparison results using a bar chart
         st.subheader("Bar Plot: Model Comparison by Accuracy")
         plt.figure(figsize=(10, 6))
-        top_3_models.set_index('Model')['Accuracy'].plot(kind='bar', color=['blue', 'green', 'red'])
+        comp_models.set_index('Model')['Accuracy'].plot(kind='bar', color=['blue', 'green', 'red'])
         plt.ylabel('Accuracy')
         plt.title('Model Comparison: Accuracy')
         st.pyplot(plt)

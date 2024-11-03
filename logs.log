@@ -42491,3 +42491,35 @@ ValueError: Target scores need to be probabilities for multiclass roc_auc, i.e. 
 2024-10-30 07:45:38,681:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
 2024-10-30 07:45:38,747:INFO:Initializing load_model()
 2024-10-30 07:45:38,747:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:56:00,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-30 07:56:00,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-30 07:56:00,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-30 07:56:00,565:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-30 07:56:50,413:INFO:Initializing load_model()
+2024-10-30 07:56:50,413:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:56:50,523:INFO:Initializing load_model()
+2024-10-30 07:56:50,523:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:56:50,578:INFO:Initializing load_model()
+2024-10-30 07:56:50,578:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:56:56,967:INFO:Initializing load_model()
+2024-10-30 07:56:56,967:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:56:57,014:INFO:Initializing load_model()
+2024-10-30 07:56:57,014:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:56:57,082:INFO:Initializing load_model()
+2024-10-30 07:56:57,082:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:57:53,697:INFO:Initializing load_model()
+2024-10-30 07:57:53,697:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:57:53,745:INFO:Initializing load_model()
+2024-10-30 07:57:53,745:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:57:53,798:INFO:Initializing load_model()
+2024-10-30 07:57:53,798:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
+2024-10-30 07:57:58,692:INFO:Initializing load_model()
+2024-10-30 07:57:58,692:INFO:load_model(model_name=GradientBoostingClassifier1, platform=None, authentication=None, verbose=True)
+2024-10-30 07:57:58,723:INFO:Initializing load_model()
+2024-10-30 07:57:58,723:INFO:load_model(model_name=LGBMClassifier2, platform=None, authentication=None, verbose=True)
+2024-10-30 07:57:58,776:INFO:Initializing load_model()
+2024-10-30 07:57:58,776:INFO:load_model(model_name=RandomForestClassifier3, platform=None, authentication=None, verbose=True)
