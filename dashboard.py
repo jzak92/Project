@@ -57,22 +57,48 @@ else:
 
 
     ## 1-View Student Data Section
-    if action == "View Student Data":
-        st.header("Search Student Data")
+    if action == "View Students Data":
+        st.header("Search Students Data")
         
-        # Input fields for Student ID and Code Module
-        student_id = st.text_input("Enter Student ID")
-        code_module = st.selectbox("Select Code Module", options=data['Code_module'].unique())
+
+        ## To get multiple students data
+        # Input fields for Student IDs and Code Modules
+        student_ids = st.text_input("Enter Student IDs (comma separated)").split(',')
+        student_ids = [id.strip() for id in student_ids if id.strip()]
+
+        # Select multiple Code Modules
+        code_modules = st.multiselect("Select Code Modules", options=data['Code_module'].unique())
+
         # Search for the student data when the user clicks the button
         if st.button("Search"):
-            # Filter the data based on Student ID and Code Module
-            student_data = data[(data['Student_id'] == int(student_id)) & (data['Code_module'] == code_module)]
-            # Display the student's data if found
-            if not student_data.empty:
-                st.subheader(f"Details for Student ID: {student_id} in Module: {code_module}")
-                st.write(student_data)
+            if student_ids and code_modules:
+                # Filter the data based on multiple Student IDs and Code Modules
+                student_data = data[(data['Student_id'].isin([int(id) for id in student_ids])) &
+                            (data['Code_module'].isin(code_modules))]
+        
+                # Display the student's data if found
+                if not student_data.empty:
+                    st.subheader(f"Details for selected students in selected modules")
+                    st.write(student_data)
+                else:
+                    st.error("No student found with the provided details.")
             else:
-                st.error("No student found with the provided details.")
+                st.error("Please enter at least one Student ID and select at least one Code Module.")
+
+
+        # # Input fields for Student ID and Code Module
+        # student_id = st.text_input("Enter Student ID")
+        # code_module = st.selectbox("Select Code Module", options=data['Code_module'].unique())
+        # # Search for the student data when the user clicks the button
+        # if st.button("Search"):
+        #     # Filter the data based on Student ID and Code Module
+        #     student_data = data[(data['Student_id'] == int(student_id)) & (data['Code_module'] == code_module)]
+        #     # Display the student's data if found
+        #     if not student_data.empty:
+        #         st.subheader(f"Details for Student ID: {student_id} in Module: {code_module}")
+        #         st.write(student_data)
+        #     else:
+        #         st.error("No student found with the provided details.")
 
 
     ## 2-Collect input data for student details (only for prediction)
