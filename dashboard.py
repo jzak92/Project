@@ -57,10 +57,9 @@ else:
 
 
     ## 1-View Student Data Section
-    if action == "View Students Data":
-        st.header("Search Students Data")
+    if action == "View Student Data":
+        st.header("Search Student Data")
         
-
         ## To get multiple students data
         # Input fields for Student IDs and Code Modules
         student_ids = st.text_input("Enter Student IDs (comma separated)").split(',')
