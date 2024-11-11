@@ -50,15 +50,15 @@ else:
     st.sidebar.header("Choose Desired Option")
     # Action selection: Choose between Predict, View Student Data, etc.
     action = st.sidebar.radio("Select Action", 
-                                ("View Student Data", 
+                                ("View Students Data", 
                                 "Predict Performance", 
                                 "Plot Heatmap",
                                 "Compare ML Models"))
 
 
     ## 1-View Student Data Section
-    if action == "View Student Data":
-        st.header("Search Student Data")
+    if action == "View Students Data":
+        st.header("Search Students Data")
         
         ## To get multiple students data
         # Input fields for Student IDs and Code Modules
